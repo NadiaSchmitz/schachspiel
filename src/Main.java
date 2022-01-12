@@ -10,15 +10,13 @@ public class Main {
 		double[] gewicht_t = new double[64];
 		double[] laenge_m = new double[64];
 		double[] laenge_km = new double[64];
-		String s;
 		double summe, summe_gewicht_kg, summe_gewicht_t, summe_laenge_m, summe_laenge_km;
 		
 		DecimalFormat df = new DecimalFormat("00000000000000000000");
 		DecimalFormat dff = new DecimalFormat("00");
 		DecimalFormat df_koma = new DecimalFormat("00000000000000000000.00");
 		
-		reiskorn[0] = 1;
-		summe = 1;
+		summe = 0;
 		summe_gewicht_kg = 0;
 		summe_gewicht_t = 0;
 		summe_laenge_m = 0;
@@ -52,8 +50,8 @@ public class Main {
 		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------");
 		
 		for (i = 0; i < reiskorn.length - 1; i++) {
-			reiskorn[i] = Math.pow(2, i);
-			summe = summe + reiskorn[i];
+			//reiskorn[i] = Math.pow(2, i);
+			//summe = summe + reiskorn[i];
 			gewicht_kg[i] = reiskorn[i] / 100 * 5 / 1000;
 			summe_gewicht_kg = summe_gewicht_kg + gewicht_kg[i];
 			gewicht_t[i] = gewicht_kg[i] / 1000;
