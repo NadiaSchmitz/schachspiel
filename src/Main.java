@@ -50,8 +50,6 @@ public class Main {
 		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------");
 		
 		for (i = 0; i < reiskorn.length - 1; i++) {
-			//reiskorn[i] = Math.pow(2, i);
-			//summe = summe + reiskorn[i];
 			gewicht_kg[i] = reiskorn[i] / 100 * 5 / 1000;
 			summe_gewicht_kg = summe_gewicht_kg + gewicht_kg[i];
 			gewicht_t[i] = gewicht_kg[i] / 1000;
